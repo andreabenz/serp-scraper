@@ -5,12 +5,16 @@ from app.config import (
     CHROMEDRIVER_PATH,
     SEARCH_QUERY,
     SQLITE_DB_PATH,
+    SCRAPINGDOG_API_KEY,
 )
 
 # Initialize the chosen scraper
 if SCRAPER == "selenium":
     from app.scraper.selenium_scraper import SeleniumScraper
     scraper = SeleniumScraper(CHROMEDRIVER_PATH)
+elif SCRAPER == "scrapingdog":
+    from app.scraper.scrapingdog_scraper import ScrapingDogScraper
+    scraper = ScrapingDogScraper(SCRAPINGDOG_API_KEY)
 else:
     raise ValueError(f"Unknown scraper: {SCRAPER}")
 
@@ -46,4 +50,4 @@ for item in data:
         rating=item["rating"],
         is_ad=item["is_ad"]
     )
-db.close()                             # close the connection
+db.close()

@@ -9,6 +9,7 @@ SEARCH_QUERY     = os.getenv("SEARCH_QUERY")
 SQLITE_DB_PATH   = os.getenv("SQLITE_DB_PATH", "results.db")
 SCREENSHOT_PATH  = os.getenv("SCREENSHOT_PATH", "Data/latest_view.png")
 EXPORT_PATH      = os.getenv("EXPORT_PATH", "Data/exports")
+SCRAPINGDOG_API_KEY = os.getenv("SCRAPINGDOG_API_KEY")
 
 # Component selectors (choose which implementation to use)
 SCRAPER  = os.getenv("SCRAPER", "selenium")

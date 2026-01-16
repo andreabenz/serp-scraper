@@ -12,7 +12,7 @@ class SeleniumScraper:
         self.service = Service(driver_path)
         
         self.options = webdriver.ChromeOptions()
-        # self.options.add_argument("--headless")  # Run in headless mode (turn off for debugging)
+        self.options.add_argument("--headless")  # Run in headless mode (turn off for debugging)
         self.options.add_argument("--window-size=1920,1080")
         self.options.add_argument("--disable-blink-features=AutomationControlled")
 
