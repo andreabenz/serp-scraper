@@ -35,5 +35,15 @@ data = parser.parse(html)              # parse into structured data
 
 # Save results to the database
 for item in data:
-    db.insert_result(item["title"], item["link"], item["description"])
+    db.insert_result(
+        position=item["position"],
+        title=item["title"],
+        link=item["link"],
+        domain=item["domain"],
+        description=item["description"],
+        description_length=item["description_length"],
+        result_type=item["result_type"],
+        rating=item["rating"],
+        is_ad=item["is_ad"]
+    )
 db.close()                             # close the connection

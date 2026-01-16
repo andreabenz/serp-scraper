@@ -8,6 +8,7 @@ CHROMEDRIVER_PATH = os.getenv("CHROMEDRIVER_PATH")
 SEARCH_QUERY     = os.getenv("SEARCH_QUERY")
 SQLITE_DB_PATH   = os.getenv("SQLITE_DB_PATH", "results.db")
 SCREENSHOT_PATH  = os.getenv("SCREENSHOT_PATH", "Data/latest_view.png")
+EXPORT_PATH      = os.getenv("EXPORT_PATH", "Data/exports")
 
 # Component selectors (choose which implementation to use)
 SCRAPER  = os.getenv("SCRAPER", "selenium")
