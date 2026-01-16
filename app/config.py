@@ -7,6 +7,7 @@ load_dotenv()  # load variables from .env into environment
 CHROMEDRIVER_PATH = os.getenv("CHROMEDRIVER_PATH")
 SEARCH_QUERY     = os.getenv("SEARCH_QUERY")
 SQLITE_DB_PATH   = os.getenv("SQLITE_DB_PATH", "results.db")
+SCREENSHOT_PATH  = os.getenv("SCREENSHOT_PATH", "Data/latest_view.png")
 
 # Component selectors (choose which implementation to use)
 SCRAPER  = os.getenv("SCRAPER", "selenium")
