@@ -27,3 +27,9 @@ class SQLiteDB:
 
     def close(self):
         self.conn.close()
+
+    def fetch_all(self):
+        self.cursor.execute(
+            "SELECT id, title, link, description FROM results"
+        )
+        return self.cursor.fetchall()
