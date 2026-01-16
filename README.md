@@ -16,8 +16,7 @@ This repository is configured to use one of two scraping strategies:
   - `beautifulsoup4` (HTML parsing)
   - `python-dotenv` (environment variable loading)
   - `requests` (required when using ScrapingDog API)
-  - `pandas` (listed in requirements; not required by core run path right now)
-- Database: `SQLite` (via Python stdlib `sqlite3`)
+  - Database: `SQLite` (via Python stdlib `sqlite3`)
 
 ### Requirements
 - Python 3.10+ (recommended)
