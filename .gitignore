@@ -1,3 +1,11 @@
 .venv/
-
 .env
+__pycache__/
+*.pyc
+__init__.py
+
+.vscode/
+Data/
+
+*.db
+
